@@ -8,7 +8,7 @@ function getStockPrice(symbols) {
     if (!value) { continue }
     const allValues = data[idx].split("|")
     if (allValues.length < 13){ continue }
-    res[symbols[idx]] = data[idx].split("|")[13]
+    res[symbols[idx]] = data[idx].split("|")[19]
   }
   return res
 }
